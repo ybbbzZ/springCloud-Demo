@@ -5,7 +5,7 @@
 
 
 > 现在很多互联网公司已经摒弃了单体集群架构，逐渐转向分布式架构。所以**springCloud**不得不会，以下做个学习记录，供以后翻看。 
-> read.me上只是简要编写了springcloud整合组件eureka的过程(顺便巩固了下maven的依赖、聚合等一些相关知识)，其它组件详见博客https://www.cnblogs.com/codeggs/p/12605506.html
+> read.me上只是简要编写了springcloud整合组件eureka的过程(顺便巩固了下maven的依赖、聚合等一些相关知识)，其它组件详见博客https://www.cnblogs.com/codeggs/category/1685594.html
 
 ###### 各种环境的版本如下：
 
