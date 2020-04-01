@@ -1,5 +1,7 @@
 package com.gjn.shoporder.controller;
 
+import com.gjn.shopfeign.stock.StockWebFeign;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,9 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ShopOrderController {
 
-    @GetMapping("/test")
-    public void test(){
-        System.out.println("商品订单测试");
+    @Autowired
+    private StockWebFeign stockWebFeign;
+
+    @GetMapping("/create")
+    public void test() {
+        stockWebFeign.deduct();
+        System.out.println("订单创建成功!!");
     }
+
 
 }

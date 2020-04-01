@@ -29,6 +29,18 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!--依赖feign服务-->
+        <dependency>
+            <groupId>com.gjn</groupId>
+            <artifactId>shop-feign</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--依赖hystrix-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
