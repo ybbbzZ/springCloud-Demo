@@ -1,11 +1,17 @@
 spring:
   application:
-    name: shop-order-v1
+    name: shop-zuul
 
 server:
-  port: 8090
-
+  port: 8070
 eureka:
   client:
     service-url:
       defaultZone: http://192.168.0.105:8761/eureka/
+  instance:
+    prefer-ip-address: true
+zuul:
+  routes:
+    shop-order-v1: /order/**
+
+

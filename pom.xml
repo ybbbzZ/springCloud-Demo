@@ -20,6 +20,7 @@
         <module>shop-stock</module>
         <module>shop-feign</module>
         <module>shop-order</module>
+        <module>shop-zuul</module>
     </modules>
 
     <properties>

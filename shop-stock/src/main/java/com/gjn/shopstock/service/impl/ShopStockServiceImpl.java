@@ -14,11 +14,11 @@ public class ShopStockServiceImpl implements ShopStockService {
     @Override
     @HystrixCommand(fallbackMethod = "deductError")
     public void deduct() {
-        int i = 1 / 0;
-        System.out.println("=========stock 8081=========");
+//        int i = 1 / 0;
+        System.out.println("=========stock 8080=========");
     }
 
     public void deductError() {
-        System.out.println("=========stock error 8081=========");
+        System.out.println("=========stock error 8080=========");
     }
 }

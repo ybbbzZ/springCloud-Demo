@@ -11,16 +11,16 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Created by gjn on 2020/3/31
  */
-//@RequestMapping("/stock")
-//@RestController
-//public class ShopStockController {
-//
-//    @Autowired
-//    private ShopStockService shopStockService;
-//
-//    @GetMapping("/deduct")
-//    public void deduct() {
-//        shopStockService.deduct();
-//        System.out.println(ShopStockEnum.SHOP_STOCK_REDUCE_DEDUCT_ONE);
-//    }
-//}
+@RequestMapping("/stock")
+@RestController
+public class ShopStockController {
+
+    @Autowired
+    private ShopStockService shopStockService;
+
+    @GetMapping("/sub")
+    public void deduct() {
+        shopStockService.deduct();
+        System.out.println(ShopStockEnum.SHOP_STOCK_REDUCE_DEDUCT_ONE);
+    }
+}
