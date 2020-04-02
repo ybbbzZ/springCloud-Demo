@@ -1,4 +1,2 @@
-/.idea/springCloud-Demo.iml
-/shop-parent/*
-/.idea/vcs.xml
 /.idea/*
+shop-parent.iml
