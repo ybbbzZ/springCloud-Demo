@@ -1,0 +1,40 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.105:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: prod
+  application:
+    name: shop-order
+  cloud:
+    config:
+      uri: http://localhost:8888
+      label: master
+      profile: prod
+      discovery:
+        enabled: true
+        service-id: shop-config
+
+
+---
+spring:
+  profiles: dev
+  application:
+    name: shop-order
+  cloud:
+    config:
+      uri: http://localhost:8888
+      label: master
+      profile: dev
+      discovery:
+        enabled: true  #开启eureka发现
+        service-id: shop-config #指定配置中心的应用名
+

@@ -21,6 +21,7 @@
         <module>shop-feign</module>
         <module>shop-order</module>
         <module>shop-zuul</module>
+        <module>shop-config</module>
     </modules>
 
     <properties>

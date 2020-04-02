@@ -8,47 +8,26 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.gjn</groupId>
-    <artifactId>shop-order</artifactId>
+    <artifactId>shop-config</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>shop-order</name>
-    <description>Demo project for shop-order</description>
+    <name>shop-config</name>
+    <description>Demo project for shop-config</description>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- spring cloud config server依赖包 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-server</artifactId>
+        </dependency>
+        <!-- eureka client 依赖包 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-        <!--依赖feign服务-->
-        <dependency>
-            <groupId>com.gjn</groupId>
-            <artifactId>shop-feign</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <!-- spring cloud config client依赖包 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>
-        <!--实现配置自动刷新需要这个依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <!--spring cloud bus依赖包-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
-        </dependency>
-        <!--@ConfigurationProperties注解貌似需要这个这个依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -56,6 +35,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
 
     <build>
         <plugins>

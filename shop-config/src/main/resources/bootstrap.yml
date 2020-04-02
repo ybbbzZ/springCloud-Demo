@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: shop-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ybbbzZ/springcloud-config #配置文件所在仓库
+          username:
+          password:
+          default-label: master #配置文件分支
+          search-paths: config  #配置文件所在根目录
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.105:8761/eureka/
+  instance:
+    prefer-ip-address: true
