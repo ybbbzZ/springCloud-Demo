@@ -23,4 +23,9 @@ public class ShopStockController {
         shopStockService.deduct();
         System.out.println(ShopStockEnum.SHOP_STOCK_REDUCE_DEDUCT_ONE);
     }
+
+    @GetMapping("backOrder")
+    public String backOrder(){
+        return "i'm shop-stock";
+    }
 }
