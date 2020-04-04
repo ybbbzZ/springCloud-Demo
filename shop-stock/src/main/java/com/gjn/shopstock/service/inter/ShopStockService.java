@@ -4,4 +4,6 @@ public interface ShopStockService {
 
     void deduct();
 
+    void testHystrix();
+
 }

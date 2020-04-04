@@ -28,4 +28,9 @@ public class ShopStockController {
     public String backOrder(){
         return "i'm shop-stock";
     }
+
+    @GetMapping("hy")
+    public void testHystrix(){
+        shopStockService.testHystrix();
+    }
 }

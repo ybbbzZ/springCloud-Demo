@@ -22,6 +22,7 @@
         <module>shop-order</module>
         <module>shop-zuul</module>
         <module>shop-config</module>
+        <module>shop-turbine</module>
     </modules>
 
     <properties>
